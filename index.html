@@ -6,7 +6,27 @@
     <script src="d3/d3.min.js"></script>
     <body>
 
-        Fuck you DevonYan!
+        <p>Fuck you DevonYan!</p>
 
     </body>
+
+    <script>
+        // Update…
+        var p = d3.select("body")
+            .selectAll("p")
+            .data([4, 8, 15, 16, 23, 42])
+            .enter().append("p")
+            .text(function(d) { return d; });
+
+        // Enter…
+        p.enter().append("p")
+            .text(function(d) { return d; });
+
+        // Exit…
+        p.exit().remove();
+
+        var q = d3.select("body").transition()
+                .style("background-color", "white");
+        
+    </script>
 </html> 

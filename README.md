@@ -1,4 +1,6 @@
 # MS-Project
+### Recommended Python Version: Python 3.6.7 
+--------------------------------------
 <pre>
 *Maybe change methods to visualize data*
 ---------------------------------------
